@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  xui:
+    image: enwaiax/xuiplus
+    container_name: xuiplus
+    volumes:
+      - $PWD/db/:/etc/x-ui/
+      - $PWD/cert/:/root/cert/
+    restart: unless-stopped
+    network_mode: host
