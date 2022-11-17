@@ -29,7 +29,7 @@ jobs:
 
       - name: Lower case
         id: string
-        uses: ASzc/change-string-case-action@v4
+        uses: ASzc/change-string-case-action@v5
         with:
           string: ${{ github.repository }}
 
