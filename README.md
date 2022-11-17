@@ -4,6 +4,8 @@ This is the docker image for X-UI Unofficial
 
 Supporting below plaform: arm64, amd64, s390x.
 
+- [ghcr.io/x-ui-unofficial/docker:latest](https://github.com/x-ui-unofficial/docker/pkgs/container/docker)
+
 ### Why Should You Use Docker
 
 - Consistent & Isolated Environment
@@ -41,7 +43,7 @@ docker run -itd --network=host \
     -v $PWD/db/:/etc/x-ui/ \
     -v $PWD/cert/:/root/cert/ \
     --name x-ui --restart=unless-stopped \
-    enwaiax/xuiplus
+    ghcr.io/x-ui-unofficial/docker
 ```
 
 ##### Or you could use docker compose to start it
@@ -58,7 +60,7 @@ Clone this repo
 
 ```
 cd build_image
-docker build -t enwaiax/xuiplus .
+docker build -t ghcr.io/x-ui-unofficial/docker .
 
 ```
 
